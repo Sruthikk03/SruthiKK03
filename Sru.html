@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Random Number Generator</title>
+    <style>
+        button {
+            padding: 50px;
+            font-size: 30px;
+            transition: transform 0.4s ease;
+        }
+
+        button:active {
+            transform: scale(0.9);
+        }
+    </style>
+</head>
+<body style="background-color: #43fadf;">
+    <h1><b>WANT A RANDOM NUMBER?</b></h1>
+    <button onclick="generateRandomNumber()">CLICK HERE~</button>
+    <p id="randomNumber"></p>
+
+    <script>
+        function generateRandomNumber() {
+            // Generate a random number between 1 and 100 (you can adjust the range)
+            var randomNumber =Math.floor(Math.random() * 100);
+
+            // Display the random number
+            document.getElementById("randomNumber").innerHTML = "you got " + randomNumber+ "~";
+        }
+    </script>
+</body>
+</html>
+
+
